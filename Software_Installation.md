@@ -1,7 +1,7 @@
 ## NF-CORE LPWGS Analysis
 This markdown file walks through the necessarry steps to setup NF-CORE on the university of Sheffield's Stanage HPC. The following is based on the University of Sheffield Bioinformatics Core's instructions for setting up NF-Core on your Stanage account. I have modified the instructions slightly, where commands are not up to date. I have also expanded this to specifically running NF-CORE's Sarek pipeline (https://nf-co.re/sarek) for inferring copy number changes from low-pass whole genome sequencing (LPWGS) data.  
 
-## Installing Miniconda 
+## 1) Installing Miniconda 
 First login to Stanage using your username, and password, you may need to connect to the VPN to do this. If you have not accessed your HPC account before, you may need to enable DUO authentication as well.
 
 ```
@@ -106,7 +106,57 @@ source ~/.bashrc
 
 The last thing to note here is that you should not load the anaconda environmental module available to all HPC users and the personal miniconda module you have just made at the same time.
 
-For further information on making software available via a custom module file visit:
+## 2) Install Nextflow and nf-core within a Conda Environment
 
-[Making software available via a custom module file](https://docs.hpc.shef.ac.uk/en/latest/referenceinfo/environment-modules/creating-custom-modulefiles.html)
+### Load and Configure Conda
+
+Run the following commands in the order provided and follow any prompts as appropriate:
+
+```shell
+# load the miniconda module
+module load miniconda
+
+# disable base environment auto-activation
+conda config --set auto_activate_base false
+
+# add the bioconda and conda-forge channels to conda configuration
+conda config --add channels bioconda
+conda config --add channels conda-forge
+
+# set channel_priority to "strict"
+conda config --set channel_priority strict
+
+# ensure conda is up-to-date
+# NB This can take some time, 20 minutes in testing 
+conda update conda
 ```
+
+
+## Create a Conda Analysis Environment with Nextflow and nf-core
+
+Run the following commands in order and follow any prompts as appropriate:
+
+```shell
+# make the "nf_env" environment
+conda create --name nf_env nextflow nf-core
+
+# activate the environment
+source activate nf_env
+
+# ensure all packages are up-to-date
+conda update --all
+```
+
+You can now test the install has worked by running the following:
+
+```shell
+# test the environment is working
+nextflow info
+
+# test functionality
+nextflow run hello
+```
+
+When you are finished, you can deactivate your conda environment using the command `conda deactivate`
+
+Should you wish to unload your personal miniconda module you can do so by running `module unload miniconda`

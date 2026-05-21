@@ -27,7 +27,7 @@ chmod +x Miniconda3-py39_23.5.2-0-Linux-x86_64.sh
 
 # run the installer
 bash Miniconda3-py39_23.5.2-0-Linux-x86_64.sh
-
+```
 
 The miniconda installer will now run and walk you through the install process. There are two **IMPORTANT** things you must take note of at this point:
 

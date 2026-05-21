@@ -1,5 +1,5 @@
 ## NF-CORE LPWGS Analysis
-This markdown file walks through the necessarry steps to setup NF-CORE on the university of Sheffield's Stanage HPC. The following is based on the University of Sheffield Bioinformatics Core's instructions for setting up NF-Core on your Stanage account. I have modified the instructions slightly, where commands are not up to date. I have also expanded this to specifically running NF-CORE's Sarek pipeline (https://nf-co.re/sarek) for inferring copy number changes from low-pass whole genome sequencing (LPWGS) data.  
+This markdown file walks through the necessarry steps to setup NF-CORE on the university of Sheffield's Stanage HPC. The following is based on the University of Sheffield Bioinformatics Core's instructions for setting up NF-Core on your Stanage account. I have modified the instructions slightly, where commands are not up to date. I have also expanded this to specifically running [NF-CORE's Sarek pipeline](https://nf-co.re/sarek) for inferring copy number changes from low-pass whole genome sequencing (LPWGS) data.  
 
 ## 1) Installing Miniconda 
 First login to Stanage using your username, and password, you may need to connect to the VPN to do this. If you have not accessed your HPC account before, you may need to enable DUO authentication as well.

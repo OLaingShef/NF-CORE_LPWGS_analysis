@@ -156,7 +156,8 @@ nextflow info
 # test functionality
 nextflow run hello
 ```
+If succesful, you should get something an output saying something like "NF-Core, version 1.2.3  hello, ciao, hola etc etc." 
 
 When you are finished, you can deactivate your conda environment using the command `conda deactivate`
 
-Should you wish to unload your personal miniconda module you can do so by running `module unload miniconda`
+Should you wish to unload your personal miniconda module you can do so by running `module unload miniconda`. 

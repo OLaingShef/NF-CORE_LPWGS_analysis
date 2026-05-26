@@ -5,3 +5,5 @@ This repository contains the necessarry code to perform low-pass whole genome se
 If this is your first time using an nf-core pipeline on stanage. you will need to install miniconda and nf-core before you can perform any analysis. details here 
 
 [1) Install miniconda and nextflow](https://github.com/OLaingShef/NF-CORE_LPWGS_analysis/blob/main/Stanage_miniconda_and_NF-Core_Installation.md)
+
+[2) Running variant calling with NF-CORE's Sarek Pipeline](https://github.com/OLaingShef/NF-CORE_LPWGS_analysis/blob/main/Sarek_pipeline_setup_and_execution.md)

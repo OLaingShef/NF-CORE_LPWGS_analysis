@@ -47,4 +47,15 @@ readlink -f myfile.fq.gz
 ```
 obviously change to the filename to your own. 
 
-Finally you will need a submission script. An example submission script 
+## 2 Submitting your script
+
+An example submission script can be found [here](https://github.com/OLaingShef/NF-CORE_LPWGS_analysis/blob/main/resumescript_template.sh). 
+
+Modify the email adress for notifications, as well as the PROJECT variable as appropriate to match the filepath of your project. 
+
+Copy the script to the script subdirectory of lowpass_training_project_root and submit the script using
+
+```
+cd lowpass_training_project_root/script 
+sbatch resumescript_template.sh
+```

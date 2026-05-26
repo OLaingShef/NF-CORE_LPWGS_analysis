@@ -150,7 +150,7 @@ conda update --all
 You can now test the install has worked by running the following:
 
 ```shell
-conda activate nf-core
+conda activate nf_env
 # test the environment is working
 nextflow info
 

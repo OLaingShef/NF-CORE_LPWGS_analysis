@@ -34,19 +34,17 @@ and paste in the following. *NB change the "email" line to your own email addres
 ```
 then write out the changes with cntrl+o
 
-You will also need a samplesheet so that NF-CORE knows which file is which and where to look for them. 
+You will also need a samplesheet so that NF-CORE knows which file is which and where to look for them. Your samplesheet needs to have a minimum of the following fields: 
 
-Here is an example file you will need to update the sex and filepaths to match your specific samples. 
-
-```
 patient,sex,status,sample,lane,fastq_1,fastq_2
-NA,XX,1,1,L001,/mnt/parscratch/users/bi1ol/Barbaric_LPWGS/250730/40-1198588157/00_fastq/DS-1_R1_001.fastq.gz,/mnt/parscratch/users/bi1ol/Barbaric_LPWGS/250730/40-1198588157/00_fastq/DS-1_R2_001.fastq.gz
-```
 
-If you're unsure on the asolute filepath of a given file you can check with 
+Download the [example sample sheet](https://github.com/OLaingShef/NF-CORE_LPWGS_analysis/blob/main/sample_sheet.csv) and update the sex, sample, fastq1 and fastq2 fields to match your sample, entering a new row per sample. 
+
+NB fastq1 and fastq2 should contain *absolute filepaths*.
+If you're unsure on the absolute filepath of a given file you can check with
 ```
 readlink -f myfile.fq.gz
 ```
 obviously change to the filename to your own. 
 
-Finally you will need a submission script 
+Finally you will need a submission script. An example submission script 

@@ -9,3 +9,5 @@ This assumes you already have your raw data on stanage. For information on trans
 [1) Install miniconda and nextflow](https://github.com/OLaingShef/NF-CORE_LPWGS_analysis/blob/main/Stanage_miniconda_and_NF-Core_Installation.md)
 
 [2) Running variant calling with NF-CORE's Sarek Pipeline](https://github.com/OLaingShef/NF-CORE_LPWGS_analysis/blob/main/Sarek_pipeline_setup_and_execution.md)
+
+3) [Inerpreting and plotting data]

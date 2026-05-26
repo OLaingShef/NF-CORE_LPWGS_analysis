@@ -1,0 +1,2 @@
+patient,sex,status,sample,lane,fastq_1,fastq_2
+NA,XX,1,1,L001,/mnt/parscratch/users/bi1ol/Barbaric_LPWGS/250730/40-1198588157/00_fastq/DS-1_R1_001.fastq.gz,/mnt/parscratch/users/bi1ol/Barbaric_LPWGS/250730/40-1198588157/00_fastq/DS-1_R2_001.fastq.gz

@@ -17,7 +17,7 @@ We now need to write a params json file file to tell nf-core what tools to use. 
 open up a text editor for your params file 
 
 ```
-nano lowpass_training_project_root/nf-params.json
+nano lowpass_training_project_root/params/nf-params.json
 ```
 and paste in the following. *NB change the "email" line to your own email address. Also make sure to specify absolute filepaths for input and output directories*
 ```

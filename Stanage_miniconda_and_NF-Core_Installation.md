@@ -20,7 +20,11 @@ cd /users/$USER
 
 # download Miniconda3-py39_23.5.2-0. At the time of writing, GCLIB on stanage is too old for the latest miniconda.
 
-wget https://repo.anaconda.com/miniconda/Miniconda3-py39_23.5.2-0-Linux-x86_64.sh
+wget --no-check-certificate https://repo.anaconda.com/miniconda/Miniconda3-py39_23.5.2-0-Linux-x86_64.sh
+
+# check integrity 
+
+sha256sum Miniconda3-py39_23.5.2-0-Linux-x86_64.sh 
 
 # make the file executable
 chmod +x Miniconda3-py39_23.5.2-0-Linux-x86_64.sh

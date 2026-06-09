@@ -28,7 +28,7 @@ export NXF_OPTS="-Xms1g -Xmx2g"
 export NXF_SINGULARITY_CACHEDIR="/users/$USER/.singularity"
 
 # project name  >>> edit "project_name" so that it is the name of your project root directory <<<
-PROJECT="lowpass_project_root"
+PROJECT="lowpass_training_project_root"
 
 # project directories  >>> edit the name of the "filestore" e.g. /mnt/parscratch/users <<<
 PARAM_DIR="/mnt/parscratch/users/$USER/$PROJECT/params"

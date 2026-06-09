@@ -10,7 +10,7 @@ To make life easy for yourself when you come to run NF-CORE pipelines at any poi
 mkdir -p /mnt/parscratch/users/$USER
 cd /mnt/parscratch/users/$USER
 ```
-make a new projectroot, each time you perform a new nf-core analysis with the same 5 subdirectories. We NF-core will use these subdirectories to access/write various bits of data
+make a new projectroot, each time you perform a new nf-core analysis with the same 4 subdirectories. NF-core will use these subdirectories to access/write various bits of data
 ```
 mkdir -p lowpass_training_project_root/{config,params,sample_sheet,script}
 ```
@@ -20,10 +20,10 @@ open up a text editor for your params file
 ```
 nano lowpass_training_project_root/params/nf-params.json
 ```
-and paste in the following. *NB change the "email" line to your own email address. Also make sure to specify absolute filepaths for input and output directories*
+and paste in the following. *NB change the "email" line to your own email address. Also make sure to specify absolute filepaths for input and output directories. Finally, "$USER" needs replacing with your username, e.g. for me this would be bi1ol*
 ```
 {
-    "input": "/mnt/parscratch/users/$USER/lowpass_training_project_root/",
+    "input": "/mnt/parscratch/users/$USER/lowpass_training_project_root/sample_sheet/sample_sheet.csv",
     "outdir": "/mnt/parscratch/users/$USER/lowpass_training_project_root/outdir",
     "trim_fastq": true,
     "save_mapped": true,

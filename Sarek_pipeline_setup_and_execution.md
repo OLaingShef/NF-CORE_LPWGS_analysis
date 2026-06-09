@@ -5,8 +5,9 @@ NF-Core pipelines generate lots of intermediate files, and hence storage quickly
 Thankfully, Stanage has a 'parscratch' directory in which there are no per-user storage limits. NB the parscratch directory
 is not backed up, so once you've analysed your data. Copy the output to e.g. your research group's shared area and delete all files from Stanage's parscratch. 
 
-To make life easy for yourself when you come to run NF-CORE pipelines at any point in the future, navigate into your mnt/parscratch directory, 
+To make life easy for yourself when you come to run NF-CORE pipelines at any point in the future, navigate into your mnt/parscratch directory. If you haven't already got a folder here, you may need to create one first using mkdir: 
 ```
+mkdir -p /mnt/parscratch/users/$USER
 cd /mnt/parscratch/users/$USER
 ```
 make a new projectroot, each time you perform a new nf-core analysis with the same 5 subdirectories. We NF-core will use these subdirectories to access/write various bits of data

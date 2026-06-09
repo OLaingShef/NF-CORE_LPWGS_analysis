@@ -138,11 +138,16 @@ conda update conda
 
 ## Create a Conda Analysis Environment with Nextflow and nf-core
 
-Run the following commands in order and follow any prompts as appropriate:
+Make the a conda environment for nextflow and install nextflow and nf-core
 
 ```shell
 # make the "nf_env" environment
 conda create --name nf_env nextflow nf-core
+```
+
+Run the following commands in order and follow any prompts as appropriate:
+
+```shell
 
 # activate the environment
 source activate nf_env

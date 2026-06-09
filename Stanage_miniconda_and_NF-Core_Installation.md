@@ -132,7 +132,7 @@ conda config --set channel_priority strict
 
 # ensure conda is up-to-date
 # NB This can take some time, 20 minutes in testing 
-conda update conda
+conda update -n base conda
 ```
 
 

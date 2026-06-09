@@ -151,9 +151,6 @@ Run the following commands in order and follow any prompts as appropriate:
 
 # activate the environment
 source activate nf_env
-
-# ensure all packages are up-to-date
-conda update --all
 ```
 
 You can now test the install has worked by running the following:

@@ -142,7 +142,7 @@ Make the a conda environment for nextflow and install nextflow and nf-core
 
 ```shell
 # make the "nf_env" environment
-conda create --name nf_env nextflow nf-core
+conda create --name nf_env "nextflow=25.04.4" nf-core
 ```
 
 Run the following commands in order and follow any prompts as appropriate:
